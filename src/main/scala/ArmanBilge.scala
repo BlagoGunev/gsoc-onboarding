@@ -22,6 +22,8 @@ object ArmanBilge:
           },
           " on GitHub. I agree to follow the Typelevel CoC and GSoC AI policy."
         ),
+        revealed.map(r =>
+          if r then p(s"My favorite programming language is $favoriteLanguage!") else div(s"")),
         button(
           onClick --> (_.foreach(_ => revealed.update(!_))),
           revealed.map(r =>
