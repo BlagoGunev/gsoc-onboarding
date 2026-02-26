@@ -33,7 +33,7 @@ serve := {
   val server = SimpleFileServer.createFileServer(
     addr,
     file(".").toPath.toAbsolutePath,
-    SimpleFileServer.OutputLevel.None
+    SimpleFileServer.OutputLevel.NONE
   )
   server.start()
   streams.value.log.info(s"Server started at http://${server.getAddress}")
