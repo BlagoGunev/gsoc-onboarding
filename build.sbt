@@ -1,4 +1,4 @@
-val scala3Version = "3.5.2"
+val scala3Version = "3.8.2"
 val scalajsDomVersion = "2.8.0"
 val calicoVersion = "0.2.3"
 val http4sVersion = "0.23.33"
