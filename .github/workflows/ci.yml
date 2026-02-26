@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -16,8 +16,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - name: Setup sbt
-        uses: sbt/setup-sbt@v1
+      - uses: sbt/setup-sbt@v1
       - run: sbt scalafmtCheckSbt scalafmtCheckAll
       - run: sbt fastLinkJS
       - if: github.event_name != 'pull_request'
