@@ -20,9 +20,12 @@ import org.http4s.syntax.all.*
 
 val allContributors = NonEmptyList.of(
   antoniojimeneznieto,
+  `typelevel-bot`,
+  `scala-steward`,
   valencik,
   armanbilge,
-  djspiewak
+  `octocat`,
+  djspiewak,
 )
 
 object Main extends IOWebApp:
