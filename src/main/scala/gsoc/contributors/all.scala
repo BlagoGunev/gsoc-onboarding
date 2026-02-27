@@ -8,6 +8,7 @@ val allContributors = NonEmptyList.of(
   synan_mannan,
   antoniojimeneznieto,
   `typelevel-bot`,
+  parthmozarkar,
   `scala-steward`,
   `the-ivii`,
   valencik,
